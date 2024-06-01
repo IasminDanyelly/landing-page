@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #F6F7F8;
+}
+
+span{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    
+}
+
+h1,h2,p{
+    font-family: 'Quicksand', sans-serif;
+}
+footer{
+    border-top:solid 2px #3b2614;
+}
+
+@media screen and (max-width:425px) {
+
+    .h1{
+        display: none;
+    }
+    .header, .shadow{
+        height: 300px;
+        width: 100%;
+    }
+    .h2{
+        font-size: 1.3rem;
+    }
+    .cards{
+        gap: 8px;
+        width: 95%;
+        margin-bottom: 2.5rem;
+    }
+    .text-alternative{
+        font-size: 15px;
+        width: 90%;
+        max-width: 650px;
+        margin: 0 1.5rem;
+    }
+    .img-seeds{
+       display: none;
+    }
+    
+    .background-img, .background-shadow{
+        max-height: 90vh;
+        
+
+    }   
+    .differences{
+        font-size: 1rem;
+        white-space: nowrap;
+        padding: 10px 4rem;
+    } 
+    .footer{
+        white-space: nowrap;
+        padding: 1.5rem 0;
+        font-size: 15px;
+
+    }
+}
+
+@media screen and (max-width:320px) {
+    .text-alternative{
+        font-size: 13px;
+        width: 100%;
+        margin: 0 0.7rem;
+    }
+    .text-differences{
+        white-space: nowrap;
+        font-size:18px ;
+    }
+    .differences{
+        padding: 8px 2rem;
+    }
+    .footer{
+        white-space: nowrap;
+        font-size: 12px;
+    }
+}
